@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('list', function () {
+    return view('list');
+});
+Route::post('list', function () {
+    return view('list');
+});
+Route::get('list_map', function() {
+    return view('list_map');
+});
+
+Route::get('detail', function() {
+    return view('detail');
 });
